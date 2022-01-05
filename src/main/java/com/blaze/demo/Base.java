@@ -29,13 +29,13 @@ public class Base {
 
     private void launchApp() {
     	 if (config.getProperty("browser").equalsIgnoreCase("chrome")) {
-             WebDriverManager.chromedriver().setup();
-             ChromeOptions options = new ChromeOptions();
+                 WebDriverManager.chromedriver().setup();
+                 ChromeOptions options = new ChromeOptions();
          	 options.addArguments("--headless");
          	 options.addArguments("--no-sandbox");
          	 options.addArguments("--disable-dev-shm-usage");
          	 driver = new ChromeDriver(options);
-             driver.get(config.getProperty("url"));
+                 driver.get(config.getProperty("url"));
          }
     	
     }
