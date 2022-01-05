@@ -9,7 +9,7 @@ import io.restassured.specification.RequestSpecification;
 public class OpenweatherAPI {
 	
 	private static final String BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
-	private static String apiKey = "831ce5030fc71fe81b1cefe992a3a00b";
+	private static String apiKey = "ff6ee30a28b63e0d428366712fb87b46";
 	private static int responseCode;
 	
 	public static int getResponseCode() {
