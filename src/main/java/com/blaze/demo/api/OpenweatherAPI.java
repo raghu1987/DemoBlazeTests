@@ -22,7 +22,7 @@ public class OpenweatherAPI {
 	
 	public static Model getWeather(String location) {
         RestAssured.baseURI = BASE_URL;
-        RequestSpecification request = RestAssured.given();
+        RequestSpecification request = RestAssured.given(); 
         request.header("Content-Type", "application/json").param("appid", apiKey).param("q", location);
         Response resp = request.get("/").then().extract().response();
         setResponseCode(resp.getStatusCode());
